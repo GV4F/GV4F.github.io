@@ -1,0 +1,169 @@
+.cartShop{
+  padding: 30px 20px;
+  color: var(--white);
+}
+.cartShop .cartShop__h3{
+  text-align: center;
+  font-size: 23px;
+  font-family: serif;
+  font-weight: bolder;
+  color: var(--white);
+}
+.cartShop .container__cart{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+/*  IF */
+.cartShop .container__cart .cartShop__empty{
+  padding: 10px;
+  text-align: center;
+}
+.cartShop .container__cart .cartShop__empty p{
+  font-size: 19px;
+  font-family: serif;
+  font-weight: bolder;
+  color: var(--blue1);
+}
+.cartShop__empty button{
+  background-color: var(--white);
+  color: var(--blue5);
+  font-size: 17px;
+  font-family: serif;
+  font-weight: bolder;
+  padding: 3px 6px;
+  outline: none;
+  overflow: hidden;
+  position: relative;
+  transition: .4 ease-in-out;
+}
+.cartShop__empty button div{
+  z-index: 20;
+  background: none;
+  max-width: max-content;
+  position: relative;
+  transition: .4s ease-in-out;
+}
+.cartShop__empty button::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  z-index: 1;
+  background-color: var(--blue5);
+  transition: .4s ease-in-out;
+}
+.cartShop__empty button:hover::before{
+  height: 100%;
+}
+.cartShop__empty button:hover{
+  color: var(--white);
+  box-shadow: 2px 2px 20px var(--white);
+}
+.cartShop__empty button:active{
+  transform: scale3d(.8,.8,.8);
+}
+
+/* ELSE */
+.container__cart .box__cartShop{
+  background-color: var(--blue3);
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 0 0 15px 0;
+  border-radius: 10px;
+  box-shadow: 1px 2px 10px var(--blue1);
+  position: relative;
+}
+.container__cart .box__cartShop .box__cartShop-trash{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 20;
+  background-color: rgb(254 52 126);
+  color: rgb(2 2 2);
+  font-size: 16px;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  border: 1px solid var(--black);
+  top: 7px;
+  right: 7px;
+  cursor: pointer;
+}
+.container__cart .box__cartShop .box__cartShop-trash:active{
+  transform: scale3d(.8,.8,.8);
+  box-shadow: 2px 4px 10px rgb(2 2 2);
+}
+.container__cart .box__cartShop .cartShop__container-img{
+  width: 120px;
+  height: 140px;
+}
+.container__cart .box__cartShop .cartShop__container-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
+  user-select: none;
+}
+.container__cart .box__cartShop .cartShop__container-mid{
+  display: flex;
+  width: 80%;
+  align-items: center;
+  justify-content: space-between;
+}
+.container__cart .box__cartShop .cartShop__container-mid p{
+  margin: 0;
+  font-family: serif;
+  font-weight: bolder;
+  color: var(--white);
+}
+.container__cart .box__cartShop .cartShop__container-mid .cartShop__container-info h3{
+  font-family: serif;
+  font-weight: bold;
+  font-size: 25px;
+  color: var(--blue5);
+  text-decoration: underline;
+}
+.container__cart .box__cartShop .cartShop__container-mid .cartShop__container-quality button{
+  background-color: var(--blue1);
+  color: var(--blue5);
+  width: 25px;
+  height: 25px;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  text-align: center;
+  transition: .4s;
+}
+.container__cart .box__cartShop .cartShop__container-mid .cartShop__container-quality button:active{
+  transform: scale3d(.8,.8,.8);
+  box-shadow: 2px 2px 20px var(--blue1);
+}
+.box__cartShop .cartShop__container-mid .cartShop__container-quality .cartShop__cantidad{
+  display: flex;
+  align-items: center;
+}
+.box__cartShop .cartShop__container-mid .cartShop__container-quality .cartShop__cantidad span{
+  background: none;
+  color: var(--white);
+  font-size: 18px;
+  font-weight: bold;
+  font-family: serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 25px;
+  border-top: 1px solid var(--blue1);
+  border-bottom: 1px solid var(--blue1);
+}

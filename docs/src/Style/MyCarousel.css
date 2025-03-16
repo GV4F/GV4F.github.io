@@ -1,0 +1,38 @@
+.container__carousel{
+  padding: 1px 0;
+}
+.carousel{
+  height: 100%;
+  width: 100%;
+}
+.carousel-item{
+  height: 470px;
+}
+.carousel-item img{
+  width: 100%;
+  height: 100%;
+  /* object-fit: cover; */
+  object-position: center;
+}
+
+/* MEDIA SCREEN */
+@media (max-width: 1120px){
+  .carousel-item{
+    height: 370px;
+  } 
+}
+@media (max-width: 760px){
+  .carousel-item{
+    height: 270px;
+  } 
+}
+@media (max-width: 530px){
+  .carousel-item{
+    height: 220px;
+  } 
+}
+@media (max-width: 360px){
+  .carousel-item{
+    height: 180px;
+  } 
+}
